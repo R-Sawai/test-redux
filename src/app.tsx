@@ -60,8 +60,8 @@ export const App: FC = () => {
           <TableBody>
             {data.map((r) => (
               <TableRow key={String(r.id)}>
-                <TableCell className="font-mono">{r.id}</TableCell>
-                <TableCell className="font-medium">{r.name}</TableCell>
+                <TableCell>{r.id}</TableCell>
+                <TableCell>{r.name}</TableCell>
               </TableRow>
             ))}
             {data.length === 0 && (
